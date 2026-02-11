@@ -8,11 +8,11 @@ source "$HOME/.local/share/zinit/zinit.git/zinit.zsh"
 autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 
-# 1. Solar Flare Prompt Customization (Loud & Vibrant)
-zstyle ':prompt:pure:path' color 208
-zstyle ':prompt:pure:prompt:success' color 226
-zstyle ':prompt:pure:git:branch' color 81
-zstyle ':prompt:pure:git:dirty' color 196
+# 1. Universal Punchy Prompt (Visible in Light & Dark Modes)
+zstyle ':prompt:pure:path' color cyan
+zstyle ':prompt:pure:prompt:success' color magenta
+zstyle ':prompt:pure:git:branch' color blue
+zstyle ':prompt:pure:git:dirty' color red
 
 # 2. Load Plugins
 zinit light zsh-users/zsh-completions
