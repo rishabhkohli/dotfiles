@@ -56,7 +56,8 @@ alias .....="cd ../../../.."
 
 # 6. Completion System Configuration
 autoload -Uz colors && colors
-zstyle ':completion:*' menu select=0
+setopt MENU_COMPLETE        # Show menu on first tab press
+zstyle ':completion:*' menu select
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 
